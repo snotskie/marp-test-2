@@ -46,13 +46,10 @@ jobs:
           LANG: en-US
 
       - name: Upload page artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: public
-          name: github-pages
-          retention-days: 1
-          overwrite: true
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4
