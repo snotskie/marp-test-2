@@ -51,6 +51,7 @@ jobs:
           path: public
           name: github-pages
           retention-days: 1
+          overwrite: true
 
       - name: Deploy to GitHub Pages
         id: deployment
